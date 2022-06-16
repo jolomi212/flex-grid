@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lexend+Deca">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Big+Shoulders+Display">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap" rel="stylesheet">
 
     <style>
         body{
@@ -14,6 +13,10 @@
             font-family: "Lexend Deca";
             font-weight: 400;
             font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            
         }
         .flex{
             display: flex;
@@ -97,7 +100,7 @@
             border:  2px solid hsl(0, 0%, 95%);
         }
 
-        @media only screen and (max-width: 375px){
+        @media only screen and (max-width: 400px){
         .flex{
             flex-direction: column;
             flex-wrap: nowrap;
@@ -109,9 +112,10 @@
 
     </style>
 </head>
-<body class="flex">
+<body>
+    <button class="card-btn" style="background-color: hsl(31, 77%, 52%) ;"><a href="grid.html">Click to see grid assignment</a></button>
 
-   
+   <div class="flex">
         <div class="rectangle">
             <img src="images/icon-sedans.svg" alt="" class="icons">
             <p class="card-title">SEDAN</p>
@@ -132,6 +136,6 @@
             <button class="card-btn dark-cyan">Learn More</button>
         </div>
     
-    
+   </div>
 </body>
 </html>
